@@ -1,13 +1,15 @@
 package org.example;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
+import java.util.Scanner;
+
+public class App {
+    public static void main(String args[])
     {
-        System.out.println( "Hello World!" );
+        Scanner scanner = new Scanner(System.in);
+        RemovingCharacters removingCharacters = new RemovingCharacters();
+        System.out.println("Enter String");
+        String str = removingCharacters.checkString(scanner.next());
+        System.out.println("Corrected String : " + str);
+
     }
 }
